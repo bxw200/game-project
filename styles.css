@@ -20,9 +20,18 @@ td {
 
 .container, .playerTurn {
   text-align: center;
-  background-image: url("./images/penquin backgrounf.jpg");
-  background-size: cover;
 }
+.head{
+background-image: url("./images/Match It.png");
+}
+.backgroundp{
+background-image: url("./images/snow.png");
+  /*background-size: cover;*/
+  }
+.backgroundm{
+background-image: url("./images/horror.png");
+  /*background-size: cover;*/
+    }
 
 .button {
   padding: 10px;
@@ -34,6 +43,7 @@ td {
   margin-bottom: 20px;
   color: #black;
   background-color: #EFA7A7;
+  /*position: absolute;*/
 }
 
 .button:hover{
@@ -49,6 +59,7 @@ td {
 body{
   margin-top: 10px;
   margin-bottom: 20px;
+  background-color: gray;
 }
 .row.image {
    position: relative;
@@ -69,8 +80,8 @@ p{
   font-size: 50px;
 }
 img{
-  height: 90px;
-  width: 90px;
+  height: 200px;
+  width:1110px;
 }
 #side{
   padding:0;
@@ -98,4 +109,24 @@ img{
 }
 .pClear{
   background-color: #ff9966;
+}
+.m1 {
+  background-image: url("./images/monster_goal01.png");
+  background-size: contain;
+}
+.m2 {
+  background-image: url("./images/monster_goal02.png");
+  background-size: contain;
+}
+.m3 {
+  background-image: url("./images/monster_goal03.png");
+  background-size: contain;
+}
+.m4 {
+  background-image: url("./images/monster_goal4.png");
+  background-size: contain;
+}
+.m5 {
+  background-image: url("./images/power_bomb.png");
+  background-size: contain;
 }

@@ -4,8 +4,7 @@ var myVar=null
 var score=0;
 var replaceBoard=null;
 var gameMode = "penguin";
-var s3=null;
-var s4=null;
+
 
 
 
@@ -40,7 +39,6 @@ function startTime(){
   setRandomPic()
   setMatchingPic()
   updateGameBoard()
-  playsound1()
   myVar = setInterval(myTimer, 1000)
 }
 
@@ -49,8 +47,6 @@ function myTimer() {
     t -= 1;
     }else{
     t = "Game Over";
-    s3.pause()
-    s4.pause()
   }
     document.getElementById("time").innerHTML = t;
 }
@@ -146,18 +142,7 @@ for (var i=0; i < cells.length; i++) {
     s2.play();
     }
 }
-function playsound1() {
-  if(gameMode == "penguin"){
-    s3=document.getElementById("sound3");
-    s4=document.getElementById("sound4");
-    s3.pause();
-  s4.play();
-  }else{
-    s4.pause();
-  s3.play();
 
-  }
-}
   function scoreZero(){
     score=0;
     document.getElementById("score").innerHTML = score;
@@ -174,10 +159,10 @@ function playsound1() {
   function changeGameMode(){
     if(gameMode=="penguin"){
       gameMode="monster"
-      document.getElementById("gamemode").innerText="Penguin"
+      document.getElementById("gamemode").innerText="Monster"
     }else{
       gameMode="penguin"
-      document.getElementById("gamemode").innerText="Monster"
+      document.getElementById("gamemode").innerText="Penguin"
     }
   }
 

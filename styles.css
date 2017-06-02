@@ -79,9 +79,13 @@ h1{
 p{
   font-size: 50px;
 }
-img{
+.row img{
   height: 200px;
   width:1110px;
+}
+#play img{
+  height: 250px;
+  width: 250px;
 }
 #side{
   padding:0;
